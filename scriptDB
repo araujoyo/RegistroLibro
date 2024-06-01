@@ -1,0 +1,16 @@
+CREATE TABLE [dbo].[Libros](
+	[Id] [int] IDENTITY(1000,1) NOT NULL,
+	[Titulo] [varchar](50) NULL,
+	[Año] [varchar](50) NULL,
+	[Genero] [date] NULL,
+	[NumeroPaginas] [varchar](50) NULL,
+	[Autor] [varchar](50) NULL
+) ON [PRIMARY]
+/****** Table [dbo].[Autores]  ******/
+CREATE TABLE [dbo].[Autores](
+	[Id] [int] IDENTITY(1000,1) NOT NULL,
+	[NombreCompleto] [varchar](50) NULL,
+	[FechaNacimiento] [date] NULL,
+	[CiudadProcedencia] [varchar] NULL,
+	[CorreoElectronico] [varchar](50) NULL,
+) ON [PRIMARY]
